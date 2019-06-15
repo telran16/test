@@ -1,10 +1,10 @@
 let money, time;
 
-    money = prompt("budget in month?", 1000),
-    time = prompt("input date", '');
+money = prompt("budget in month?", 1000);
+time = prompt("input date", '');
 
 
-let appData= {
+let appData = {
     budget: +money,
     timeData: time,
     expenses: {
@@ -14,7 +14,7 @@ let appData= {
     optionalExpenses: {},
     income: [],
     savings: false
-}
+};
 
 appData.expenses.question1.what = prompt("What need to buy?", 'pie');
 appData.expenses.question1.price = +prompt("How mutch it cost?", '10');
